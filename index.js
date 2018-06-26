@@ -21,6 +21,7 @@ function deepestChild() {
     var currentChild = arr[i]
     while (currentChild.firstChild != null) {
       currentChild = currentChild.firstChild
+      debugger
       deepestChild = currentChild
     }
   }
