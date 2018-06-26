@@ -20,8 +20,10 @@ function deepestChild() {
   console.log(arr.children)
   for (var i = 0; i < arr.length; i++) {
     var currentChild = arr[i]
+    console.log(currentChild);
     while (currentChild.hasChildNodes) {
       currentChild = currentChild.firstChild
+      console.log(currentChild);
       deepestChild = currentChild
     }
   }
