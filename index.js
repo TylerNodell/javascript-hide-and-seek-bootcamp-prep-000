@@ -26,8 +26,8 @@ function deepestChild() {
   //   }
   // }
 
-  while (arr.children != null) {
-    arr = arr.children
+  while (arr.children[0] != null) {
+    arr = arr.children[0]
   }
   console.log(arr);
   return arr;
