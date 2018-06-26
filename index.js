@@ -17,17 +17,19 @@ function increaseRankBy(n) {
 function deepestChild() {
   var deepestChild;
   var arr = document.getElementById('grand-node')
-  console.log(arr.children)
-  for (var i = 0; i < arr.length; i++) {
-    var currentChild = arr[i]
-    console.log(currentChild);
-    while (currentChild.hasChildNodes) {
-      currentChild = currentChild.firstChild
-      console.log(currentChild);
-      deepestChild = currentChild
-    }
-  }
-  console.log(deepestChild)
+  
+  // for (var i = 0; i < arr.length; i++) {
+  //   var currentChild = arr[i]
+  //   while (currentChild.hasChildNodes) {
+  //     currentChild = currentChild.firstChild
+  //     deepestChild = currentChild
+  //   }
+  // }
+
+  while (arr[0].hasChildNodes) {
+    arr = arr[0].firstChild
+  } 
+  console.log(arr);
   return deepestChild;
 
   // var arr = document.getElementsbyType('body')
