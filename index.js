@@ -30,7 +30,7 @@ function deepestChild() {
     arr = arr.children
   }
   console.log(arr);
-  return deepestChild;
+  return arr;
 
   // var arr = document.getElementsbyType('body')
   // for (var i = 0; i < arr.length; i++) {
