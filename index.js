@@ -25,6 +25,7 @@ function deepestChild() {
       deepestChild = currentChild
     }
   }
+  console.log(deepestChild)
   return deepestChild;
 
   // var arr = document.getElementsbyType('body')
