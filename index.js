@@ -14,7 +14,23 @@ function increaseRankBy(n) {
   return document.getElementsByClassName('.ranked-list')
 }
 
+function searchForChild(arg) {
+  for (var i = 0; i < arg.length; i++) {
+    if (arg.children[i] != null) {
+      arg = arg.children[i]
+      searchForChild(arg);
+    } else {
+      return arg
+    }
+  }
+}
+
 function deepestChild() {
+  var deepestChild;
+  var arr = 
+
+
+  
   var deepestChild;
   var arr = document.getElementById('grand-node')
 
@@ -37,13 +53,3 @@ function deepestChild() {
   //   var answer = findDeepestChild(arr[i])
   // }
 }
-
-// function findDeepestChild(arg) {
-//   var arr = document.querySelector(arg)
-//   for (var i = 0; i < arr.length; i++) {
-//     var currentChild = arr[i]
-//     while (currentChild.hasChildNodles) {
-//       currentChild
-//     }
-//   }
-// }
