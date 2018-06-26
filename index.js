@@ -19,11 +19,9 @@ function deepestChild() {
   var arr = document.querySelectorAll('#grand-node > div')
   for (var i = 0; i < arr.length; i++) {
     var currentChild = arr[i]
-    if (currentChild.hasChildNodes) {
+    while (currentChild.hasChildNodes) {
       currentChild = currentChild.firstChild
       deepestChild = currentChild
-    } else {
-      currentChild.nextSibling
     }
   }
   return deepestChild;
