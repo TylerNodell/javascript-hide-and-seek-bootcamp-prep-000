@@ -16,7 +16,7 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   var deepestChild;
-  var arr = document.querySelectorAll('#grand-node')
+  var arr = document.querySelectorAll('#grand-node > div')
   for (var i = 0; i < arr.length; i++) {
     var currentChild = arr[i]
     while (currentChild.hasChildNodes) {
@@ -25,4 +25,19 @@ function deepestChild() {
     }
   }
   return deepestChild;
+  // var arr = document.getElementsbyType('body')
+  // for (var i = 0; i < arr.length; i++) {
+  //   var answer = findDeepestChild(arr[i])
+  // }
 }
+
+// function findDeepestChild(arg) {
+//   var arr = document.querySelector(arg)
+//   for (var i = 0; i < arr.length; i++) {
+//     var currentChild = arr[i]
+//     while (currentChild.hasChildNodles) {
+//       currentChild
+//     }
+//   }
+// }
+
