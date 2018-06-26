@@ -25,11 +25,11 @@ function increaseRankBy(n) {
 //   }
 // }
 
-function deepestChild() {
-  searchForChild(document.getElementById('grand-node'))
-}
+// function deepestChild() {
+//   searchForChild(document.getElementById('grand-node'))
+// }
 
-function kdeepestChild() {
+function deepestChild() {
 
   var deepestChild;
   var arr = document.getElementById('grand-node')
