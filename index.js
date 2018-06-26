@@ -26,6 +26,10 @@ function searchForChild(arg) {
 }
 
 function deepestChild() {
+  searchForChild(document.getElementById('grand-node'))
+}
+
+function kdeepestChild() {
   var deepestChild;
   var arr = 
 
