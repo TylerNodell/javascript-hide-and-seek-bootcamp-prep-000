@@ -13,3 +13,16 @@ function increaseRankBy(n) {
   }
   return document.getElementsByClassName('.ranked-list')
 }
+
+function deepestChild() {
+  var deepestChild;
+  var arr = document.querySelectorAll('#grand-node > div')
+  for (var i = 0; i < arr.length; i++) {
+    var currentChild = arr[i]
+    while (currentChild.querySelector(':firstChild') != null) {
+      currentChild = currentChild.querySelector(':firstChild')
+      deepestChild = currentChild
+    }
+  }
+  return deepestChild;
+}
