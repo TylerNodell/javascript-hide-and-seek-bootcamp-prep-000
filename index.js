@@ -30,11 +30,7 @@ function deepestChild() {
 }
 
 function kdeepestChild() {
-  var deepestChild;
-  var arr = 
 
-
-  
   var deepestChild;
   var arr = document.getElementById('grand-node')
 
